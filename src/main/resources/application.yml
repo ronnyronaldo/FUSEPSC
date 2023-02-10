@@ -1,0 +1,54 @@
+server:
+    port : 8080
+
+app:
+    FITBANK: 
+        #FITURL: http://10.1.99.207:8180/UCI/REQ/MWS
+        FITURL: https://fitcanales.bancodelaustro.com:2632/UCI/REQ/MWS
+
+        TimeOut: 150000
+        
+        #########TEMPORAL#########
+        llaveUCIFIT: AUSTRODIGITALPRODUCCION
+
+    DEBITOCREDITO:
+        
+        #Parametros para Debitos-Creditos
+        tip: BUS_BA_VALID
+        subDebitoCredito: "04"
+        trnDebitoCredito: 7999
+        can: MWS
+
+        ##Tarea Producción 59380 - CASH SPI1 Y SCI1 COBROS Y PAGOS VIA BC
+        conceptoSCI1: SCI1_
+        conceptoSPI1: SPI1_
+
+        conceptoDevolucion: TC_OTRAS_IFIS_
+
+    EncriptarLog: false
+    SemillaToken: DEBCREDSEED
+    CodigosRespuesta:
+        ERROR_GENERAL: F001
+        errCampoNoEspecificado: F002
+        errCampoConFormatoIncorrecto: F003
+        errValorCampoIncorrecto: F004
+
+# TEMPORAL
+llaveEncriptacion: AUSTRODIGITALPRODUCCION
+fitSecurityActivated: false
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api/v1/api-doc
+
+camel:
+  springboot:
+    name: IA.BARest
+  component:
+    servlet:
+      mapping:
+        enabled: true
+        context-path: /api/v1/*
+

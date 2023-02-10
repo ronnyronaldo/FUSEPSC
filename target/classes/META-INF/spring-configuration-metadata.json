@@ -1,0 +1,115 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.baustro.posicionconsolidada.models.ConfigProperties",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties"
+    },
+    {
+      "name": "app.codigosrespuesta",
+      "type": "com.baustro.posicionconsolidada.models.ConfigProperties$CodigosRespuesta",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties",
+      "sourceMethod": "getCodigosrespuesta()"
+    },
+    {
+      "name": "app.debitocredito",
+      "type": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties",
+      "sourceMethod": "getDebitocredito()"
+    },
+    {
+      "name": "app.fitbank",
+      "type": "com.baustro.posicionconsolidada.models.ConfigProperties$FITBANK",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties",
+      "sourceMethod": "getFitbank()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.codigosrespuesta.e-r-r-o-r-g-e-n-e-r-a-l",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$CodigosRespuesta"
+    },
+    {
+      "name": "app.codigosrespuesta.err-campo-con-formato-incorrecto",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$CodigosRespuesta"
+    },
+    {
+      "name": "app.codigosrespuesta.err-campo-no-especificado",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$CodigosRespuesta"
+    },
+    {
+      "name": "app.codigosrespuesta.err-valor-campo-incorrecto",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$CodigosRespuesta"
+    },
+    {
+      "name": "app.debitocredito.can",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.concepto-devolucion",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.concepto-s-c-i1",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.concepto-s-p-i1",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.sub-debito-credito",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.tip",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.tip-r-e-v",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.debitocredito.trn-debito-credito",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$DEBITOCREDITO"
+    },
+    {
+      "name": "app.encriptar-log",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties"
+    },
+    {
+      "name": "app.fitbank.f-i-t-u-r-l",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$FITBANK"
+    },
+    {
+      "name": "app.fitbank.llave-u-c-i-f-i-t",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$FITBANK"
+    },
+    {
+      "name": "app.fitbank.time-out",
+      "type": "java.lang.Integer",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties$FITBANK"
+    },
+    {
+      "name": "app.semilla-token",
+      "type": "java.lang.String",
+      "sourceType": "com.baustro.posicionconsolidada.models.ConfigProperties"
+    }
+  ],
+  "hints": []
+}

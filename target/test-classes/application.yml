@@ -1,0 +1,59 @@
+server:
+    port : 8080
+
+app:
+    FITBANK: 
+        FITHost: 10.1.99.207
+        #FITHost: 10.1.1.56
+
+        FITPort: 8180
+        #FITPort: 2630
+
+        #FITSchema: https
+        FITSchema: http
+
+        EndpointBase: /UCI/REQ/MWS
+        TimeOut: 150000
+        
+        #########TEMPORAL#########
+        llaveUCIFIT: AUSTRODIGITALPRODUCCION
+
+    DEBITOCREDITO:
+        
+        #Parametros para Debitos-Creditos
+        tip: BUS_BA_VALID
+        subDebitoCredito: 04
+        trnDebitoCredito: 7999
+        can: MWS
+
+        ##Tarea Producción 59380 - CASH SPI1 Y SCI1 COBROS Y PAGOS VIA BC
+        conceptoSCI1: SCI1_
+        conceptoSPI1: SPI1_
+
+        conceptoDevolucion: TC_OTRAS_IFIS_
+
+    EncriptarLog: 0
+    SemillaToken: DEBCREDSEED
+    CodigosRespuesta:
+        ERROR_GENERAL: F001
+        errCampoNoEspecificado: F002
+        errCampoConFormatoIncorrecto: F003
+        errValorCampoIncorrecto: F004
+
+
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api/v1/api-doc
+
+camel:
+  springboot:
+    name: IA.BARest
+  component:
+    servlet:
+      mapping:
+        enabled: true
+        context-path: /api/v1/*
+

@@ -1,0 +1,14 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "maven.terminal.favorites": [
+        {
+            "command": "clean compile package spring-boot:run",
+            "debug": false
+        },
+        {
+            "command": "clean compile package",
+            "debug": false
+        }
+    ]
+}
