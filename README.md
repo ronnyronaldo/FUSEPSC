@@ -1,6 +1,6 @@
 # Posición Consolidada
 
-Integración FUSE para Débitos y Créditos para Control +.
+Integración FUSE para Posicion Consolidada
 
 Documentación:
 ---
